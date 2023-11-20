@@ -1,4 +1,5 @@
 * {
+  font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -43,21 +44,53 @@ img.avatar {
 }
 
 h1 {
-  margin-top: 24px;
-  margin-bottom: 8px;
-  font-size: 32px;
+  margin-top: 5px;
+  font-size: 28px;
+}
+
+h6 {
+  color: #9adfff;
+  font-size: 13px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+p {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.username_games {
+  font-weight: 400;
+  font-size: 19px;
+  color: #1AA1F7;
 }
 
 .username {
-  font-family: 'Roboto Mono', monospace;
   font-weight: 400;
+  font-size: 19px;
+  color: white;
   opacity: 0.8;
-  font-size: 18px;
 }
 
 ul {
   list-style: none;
-  margin: 48px 0;
+}
+
+ul li a.games {
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: #1AA1F7 solid 2px;
+  color: #9adfff;
+  text-transform: uppercase;
+  font-size: 14px;
+
+  margin-bottom: 16px;
+  border-radius: 6px;
+
+  transition: background 400ms;
 }
 
 ul li a {
@@ -65,7 +98,7 @@ ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: gray solid 2px;
+  border: rgb(128, 128, 128) solid 2px;
   color: white;
   text-transform: uppercase;
   font-size: 14px;
