@@ -49,7 +49,7 @@ h1 {
 }
 
 h6 {
-  color: #9adfff;
+  color: #d1d1d1;
   font-size: 13px;
   margin-bottom: 10px;
   font-weight: 400;
@@ -83,7 +83,7 @@ ul li a.games {
   align-items: center;
   justify-content: center;
   border: #1AA1F7 solid 2px;
-  color: #9adfff;
+  color: white;
   text-transform: uppercase;
   font-size: 14px;
 
@@ -114,6 +114,7 @@ ul li a:hover {
 }
 
 footer {
+  margin-top: 30px;
   font-weight: 500;
   font-size: 12px;
   opacity: 0.6;
@@ -127,4 +128,43 @@ footer:hover {
 
 footer a {
   color: var(--text-color);
+}
+
+.twitch-icon {
+  color: #6441a5;
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.youtube-icon {
+  color: #FF0000;
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+#ver-vantagens {
+  color: #1AA1F7;
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-bottom: 15px;
+}
+
+#vantagens ul {
+  list-style: none;
+  padding: 0;
+  color: white;
+}
+
+#vantagens li {
+  font-size: 14px;
+}
+
+#vantagens p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+h6:nth-of-type(3) {
+  margin-top: 40px; /* Adiciona o espaço acima */
 }

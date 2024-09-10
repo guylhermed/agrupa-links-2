@@ -1,72 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <link rel="icon" href="https://yt3.googleusercontent.com/AE6i6lvb5gQA_dqmELdK89dufIzDb6-hat1nSRnSyGwrSirg-0I0elA4r412fV28ZuWT_Vub=s176-c-k-c0x00ffffff-no-rj" type="image/x-icon">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meus Links</title>
+<head>
+  <link rel="icon"
+    href="https://yt3.googleusercontent.com/AE6i6lvb5gQA_dqmELdK89dufIzDb6-hat1nSRnSyGwrSirg-0I0elA4r412fV28ZuWT_Vub=s176-c-k-c0x00ffffff-no-rj"
+    type="image/x-icon">
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meus Links</title>
 
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700&display=swap" rel="stylesheet">
 
-  <body class="dark">
-    <div class="container">
-      <img
-        class="avatar"
-        src="https://yt3.googleusercontent.com/AE6i6lvb5gQA_dqmELdK89dufIzDb6-hat1nSRnSyGwrSirg-0I0elA4r412fV28ZuWT_Vub=s176-c-k-c0x00ffffff-no-rj"
-        alt="Foto Guylherme sorrindo"
-      />
-      <h1>Guylherme Duarte</h1>
-      <p class="username_games">CopyBR | Games</p>
-      <h6>Sorteio de 1 Teclado Mecânico entre os 50 primeiros Subs na Twitch!</h4>
-      <ul>
-        <li>
-          <a class="games" href="https://www.twitch.tv/subs/copybrcs" target="_blank"
-            >SE TORNAR UM SUB</a
-          >
-        </li>
-        <li>
-          <a class="games" href="https://www.twitch.tv/copybrcs" target="_blank"
-            >Twitch</a
-          >
-        </li>
-        <li>
-          <a class="games" href="https://www.youtube.com/@copybrcs" target="_blank"
-            >Youtube</a
-          >
-        </li>
-        <li>
-          <a class="games" href="https://www.tiktok.com/@copybrcs" target="_blank"
-          >TikTok</a>
-        </li>
-      </ul>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
 
-      <p class="username">Outros</p>
-      <ul>
-        <li>
-          <a href="https://guylhermed.github.io/portifolio/" target="_blank"
-            >Portifólio</a
-          >
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/guylhermed/" target="_blank"
-            >Linkedin</a
-          >
-        </li>
-        <li>
-          <a href="https://github.com/guylhermed" target="_blank">Github</a>
-        </li>
-      </ul>
+<body class="dark">
+  <div class="container">
+    <img class="avatar"
+      src="https://yt3.googleusercontent.com/AE6i6lvb5gQA_dqmELdK89dufIzDb6-hat1nSRnSyGwrSirg-0I0elA4r412fV28ZuWT_Vub=s176-c-k-c0x00ffffff-no-rj"
+      alt="Foto Guylherme sorrindo" />
+    <h1>CopyBR</h1>
+    <p class="username_games">Ao vivo!</p>
+    <h6>Acompanhe nossas lives acessando <br>os links a baixo:</h6>
+    <ul>
+      <li>
+        <a class="games" href="https://www.twitch.tv/copybrcs" target="_blank">
+          <i class="fab fa-twitch twitch-icon"></i> Twitch
+        </a>
+      </li>
+      <li>
+        <a class="games" href="https://www.youtube.com/@copybrcs" target="_blank">
+          <i class="fab fa-youtube youtube-icon"></i> YouTube
+        </a>
+      </li>
+    </ul>
 
-      <footer>
-        Feito com ❤️ por
-        <a href="http://instagram.com/guylhermed" target="_blank">Guy</a>
-      </footer>
+
+    <h6>Considere ser um apoiador na Twitch se tornando um subscribe:</h6>
+
+
+
+    <ul>
+      <li>
+        <a class="games" href="https://www.twitch.tv/subs/copybrcs" target="_blank">SE TORNAR UM SUB</a>
+      </li>
+    </ul>
+    <p id="ver-vantagens" onclick="toggleVantagens()">Vantagens de ser sub</p>
+
+    <div id="vantagens" style="display: none;">
+      <p>Você concorre a prêmios e participa de sorteios exclusívos.
+        <br>Além de assistir as lives na Twitch sem anúncios e propagandas!
+      </p>
+
+
     </div>
-  </body>
+    <h6>Outras redes sociais:</h6>
+
+    <ul>
+      <li>
+        <a class="games" href="https://www.tiktok.com/@copybrcs" target="_blank">TikTok</a>
+      </li>
+    </ul>
+
+    <footer>
+      Feito com ❤️ por
+      <a href="http://instagram.com/guylhermed" target="_blank">Guy</a>
+    </footer>
+  </div>
+
+  <script>
+    function toggleVantagens() {
+      var vantagensDiv = document.getElementById("vantagens");
+      if (vantagensDiv.style.display === "none") {
+        vantagensDiv.style.display = "block";
+      } else {
+        vantagensDiv.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+
 </html>
